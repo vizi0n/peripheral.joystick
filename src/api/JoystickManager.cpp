@@ -32,6 +32,7 @@
 #elif defined(HAVE_SDL)
   #include "sdl/JoystickInterfaceSDL.h"
 #endif
+#include "buttonfactory/ButtonFactory.h"
 #include "log/Log.h"
 #include "utils/CommonMacros.h"
 
@@ -96,6 +97,7 @@ bool CJoystickManager::Initialize(void)
 #elif defined(HAVE_SDL)
   m_interfaces.push_back(new CJoystickInterfaceSDL);
 #endif
+  m_interfaces.push_back(new CButtonFactory);
 
   // Initialise all known interfaces
   for (int i = (int)m_interfaces.size() - 1; i >= 0; i--)

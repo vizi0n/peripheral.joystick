@@ -21,6 +21,8 @@ set(JOYSTICK_SOURCES src/addon.cpp
                      src/api/Joystick.cpp
                      src/api/JoystickInterface.cpp
                      src/api/JoystickManager.cpp
+                     src/api/buttonfactory/ButtonFactory.cpp
+                     src/api/buttonfactory/Joe.cpp
                      src/buttonmapper/ButtonMapper.cpp
                      src/log/Log.cpp
                      src/log/LogAddon.cpp
